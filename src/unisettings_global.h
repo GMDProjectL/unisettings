@@ -1,0 +1,12 @@
+#ifndef UNISETTINGS_GLOBAL_H
+#define UNISETTINGS_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(UNISETTINGS_LIBRARY)
+#define UNISETTINGS_EXPORT Q_DECL_EXPORT
+#else
+#define UNISETTINGS_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // UNISETTINGS_GLOBAL_H
